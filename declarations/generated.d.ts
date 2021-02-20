@@ -86,6 +86,17 @@ export class WMA extends Indicator {
 }
 export function wma(input: MAInput): number[];
 
+export class HMA extends Indicator {
+    period: number;
+    price: number[];
+    result: number[];
+    generator: IterableIterator<number | undefined>;
+    constructor(input: MAInput);
+    static calculate: typeof hma;
+    nextValue(price: number): number | undefined;
+}
+export function hma(input: MAInput): number[];
+
 export class WEMA extends Indicator {
     period: number;
     price: number[];

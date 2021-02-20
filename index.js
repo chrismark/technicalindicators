@@ -4,6 +4,7 @@ export function getAvailableIndicators () {
   AvailableIndicators.push('sma');
   AvailableIndicators.push('ema');
   AvailableIndicators.push('wma');
+  AvailableIndicators.push('hma');
   AvailableIndicators.push('wema');
   AvailableIndicators.push('macd');
   AvailableIndicators.push('rsi');
